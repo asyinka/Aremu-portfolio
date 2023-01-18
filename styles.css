@@ -1,7 +1,9 @@
-:root {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+:root {
     --primary-1: #3f8e00;
     --primary-2: #62ba1b;
     --black: #000000;
@@ -39,23 +41,25 @@
 
 .profile-card{
     padding: 2rem 1rem;
-    margin: 0 6rem;
+    margin: 2rem 6rem;
 }
 .profile-card__biodata{
     display: flex;
 }
 .profile-card__name{
     color: var(--white);
+    margin: 20px 0;
 }
 .profile-card__introductionText{
     color: var(--text-1);
+    margin-bottom: 20px;
 }
 .profile-card__button{
     background-color: var(--primary-1);
-    padding: 1.5rem 5rem;
+    padding: 1rem 5rem;
     border-radius: 0.4rem;
     border: 2px solid var(--primary-2);
-    /* outline: 20px thin var(--primary-2); */
+    outline: none;
     color: var(--white);
     font-style: var(--fontStyle-1);
     font-family: var(--Buttonfont);
@@ -64,10 +68,10 @@
     box-shadow: 0px 2px 10px var(--primary-2);
     letter-spacing: 1px;
     margin-top: 10px;
-
 }
 .profile-card__textBox{
     width: 50%;
+    margin-top: 40px;
 }
 .profile-card__image{
     width: 50%;
@@ -79,11 +83,11 @@
     height: 100%;
     width: 300px;
     border-radius: 50%;
-    /* margin: 0 5rem; */
 }
 
 .profile-card__previous-employers > p {
     color: var(--white);
+    margin-bottom: 10px;
 }
 .profile-card__previous-employers > a{
     color: var(--text-1);
@@ -94,29 +98,39 @@
     margin: 0 7rem;
 }
 
-.case-studies__heading-box{
+.heading-box{
     margin: auto;
     width: 50%;
     text-align: center;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
 }
-.case-studies-section__heading{
+.section__head-article{
+    color: #634c4c;
+}
+.section__heading{
     margin-bottom: 5px;
 }
 .record-card{
     display: flex;
     margin-top: 20px;
     height: 300px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 .record-card>*{
     flex: 1 1 50%;
 }
 .record-card__case{
     padding-top: 30px;
+    color: #5f5050;
 }
 .record-card__heading{
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    color: #000000;
 }
+/* case tag (used for fintech) properties below is used as a generic for the three tags, fintech tag is stated */
 .case-tag{
     background-color: rgba(255, 230, 0, 0.479);
     font-weight: bold;
@@ -138,7 +152,11 @@
 .record-card__article{
     line-height: 1.5em;
 }
-
+.record-card__picture img{
+    border-radius: 20px;
+    width: 100%;
+    height: 300px;
+}
 .record-card__button{
     background-color: rgb(255, 166, 0);
     outline: none;
@@ -159,9 +177,141 @@
 #second-case{
     padding-left: 15px;
 }
-.record-card__picture img{
-    border-radius: 20px;
-    width: 100%;
-    height: 300px;
+
+.testimonial-section{
+    background-color: var(--black);
+    color: var(--white);
+}
+.testimonies-container{
+    margin: 0 6rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.testimonies-container>*{
+    flex: 1 1 400px;
+}
+.client-testimony{
+    border: 1px solid transparent;
+    color: #b8b1ae;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    margin-left: 10px;
+    padding: 20px;
+    padding-bottom: 0px;
+    background: linear-gradient(black, black)padding-box, 
+                linear-gradient(to right, #9c9c9c, 30%, black)border-box;
+}
+blockquote{
+    margin-left: 10px;
+}
+blockquote p{
+    position: relative;
+    color: rgba(204, 196, 196, 0.89);
     
+}
+.blockquote p:before{
+    /* content: "\201c""\201d""\2018""\2019"; */
+    content: '\275d';
+    color: whitesmoke;
+    font-size: 60px;
+    display: block;
+    position: absolute;
+            top: -50px;
+            left: -20px;
+
+}
+.client-detail img{
+    width: 80px;
+    height: 75px;
+    border-radius: 50%;
+}
+.client-detail{
+    display: flex;
+    margin: 40px 0 20px 0;;
+}
+.client-name{
+    padding: 30px;
+    color: var(--white);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+}
+
+.designs__details--button{
+    padding: 1rem 3rem;
+    margin-bottom: 30px;
+}
+.designs__details{
+    width: 450px;
+}
+.designs__details p {
+    font-size: 0.9em;
+    color: #5e3838;
+    margin: 20px 0;
+    word-spacing: 1px;
+    line-height: 20px;
+}
+.sidebar-arrow{
+    display: flex;
+    align-items: center;
+}
+.sidebar-arrow > a{
+    color: rgb(133, 137, 139);
+}
+
+.designs__image img{
+    border-radius: 20px;
+    margin-bottom: 40px;
+    width: 450px;
+    height: 300px;
+}
+.designs__container{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.get-in-touch-section{
+    background-color: var(--black);
+    color: var(--white);
+}
+.contact-form-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px
+    /* background-color: red; */
+}
+
+.contact-form label{
+    display: block;
+}
+.contact-form__inputs{
+    /* display: block; */
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    width: 300px;
+    height: 15px;
+    margin: 10px 0 15px 0;
+}
+#message-input{
+    height: 100px;
+}
+.contact-form-button{
+    width: 300px;
+    height: 50px;
+    padding: 5px 50px;
+    font-size: 1em;
+    
+}
+.end-text{
+    background-color: var(--grey);
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+#heart-emoji{
+    color: red;
+    font-size: 140%;
+    padding: 0 3px;
 }
