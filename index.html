@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/3c350ae8f8.js" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
 </head>
 
 <body>
@@ -337,22 +338,47 @@
             </div>
             <div class="contact-form-container">
 
-                <form action="" class="contact-form">
+                <!-- <form action="https://formspree.io/f/xrgjlglr" method="post" class="contact-form">
                     <div class="contact-form__email-box">
                         <label for="email-input">Email</label>
-                        <input type="text" id="email-input" class="contact-form__inputs"
+                        <input type="email" id="email-input" name="email" class="contact-form__inputs"
                             placeholder="Please enter your email">
                     </div>
 
                     <div class="contact-form__mobile">
                         <label for=" mobile-input">Mobile</label>
-                        <input type="number" id="mobile-input" class="contact-form__inputs" placeholder="Enter mobile">
+                        <input type="tel" name="mobilenumber" id="mobile-input" class="contact-form__inputs"
+                            placeholder="Enter mobile">
                     </div>
                     <div class="contact-form__message">
                         <label for="message-input">Message</label>
-                        <textarea name="message-input" id="message-input" class="contact-form__inputs"
+                        <textarea name="message" id="message-input" class="contact-form__inputs"
                             placeholder="Enter your message"></textarea>
                     </div>
+
+                    <button class="profile-card__button contact-form-button"> Submit > </button>
+
+                </form> -->
+
+                <form style="padding: 10px" onsubmit="handleSubmission(event)" method="post" id="contact_form" class="contact-form">
+                    <h4>With AJAX </h4>
+                    <div class="contact-form__email-box">
+                        <label for="email_ajax">Email</label>
+                        <input type="email" id="email_ajax" name="email" value="joseph@gmail.com" class="contact-form__inputs"
+                            placeholder="Please enter your email">
+                    </div>
+
+                    <div class="contact-form__mobile">
+                        <label for="mobile_ajax">Mobile</label>
+                        <input type="tel" name="mobilenumber" id="mobile_ajax" class="contact-form__inputs"
+                            placeholder="Enter mobile">
+                    </div>
+                    <div class="contact-form__message">
+                        <label for="message_ajax">Message</label>
+                        <textarea name="message" rows="5" id="message_ajax" class="contact-form__inputs"
+                            placeholder="Enter your message"></textarea>
+                    </div>
+
 
                     <button class="profile-card__button contact-form-button"> Submit > </button>
 
