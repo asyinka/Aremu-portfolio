@@ -1,4 +1,4 @@
-This project contains my work on personal portfolio.
+This project contains my work on personal portfolio design.
 
 
 challenges:
