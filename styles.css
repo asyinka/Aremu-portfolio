@@ -4,7 +4,7 @@
 :root {
     --primary-1: #3f8e00;
     --primary-2: #62ba1b;
-    --black: #000000;
+    --black: #080808;
     --text-1: #9c9c9c;
     --grey: #1b1b1b;
     --white: #ffffff;
@@ -33,10 +33,11 @@
     border-radius: 3px;
     display: flex;
     justify-content: space-evenly;
-    margin: 0 6rem;
+    margin: 0 85px;
 }
 .navBar .navBar__links {
     display: flex;
+    margin-left: -25px;
 }
 
 .navBar .navBar__links .navBar__item {
@@ -58,7 +59,7 @@
 
 .profile-card{
     padding: 2rem 1rem;
-    margin: 2rem 6rem;
+    margin: 2rem 180px;
 }
 .profile-card__biodata{
     display: flex;
@@ -76,19 +77,22 @@
     margin-bottom: 20px;
 }
 .profile-card__button{
+    width: 308px;
+    height: 63px;
     background-color: var(--primary-1);
-    padding: 1rem 5rem;
-    border-radius: 0.4rem;
+    padding: 21px 54px;
+    border-radius: 4px;
     border: 1px solid var(--primary-2);
     outline: none;
     color: var(--white);
     font-style: var(--primary-font-family);
     font-family: var(--primary-font-family);
-    font-weight: 900;
-    font-size: 14px;
-    box-shadow: 0px 2px 10px var(--primary-2);
-    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 16px;
+    box-shadow: 0px 2px 10px #3f8e0080;
+    line-height: 20px;
     margin-top: 10px;
+
 }
 .profile-card__textBox{
     width: 50%;
@@ -127,70 +131,88 @@
     align-items: center;
 }
 
-
 .case-studies-section{
-    margin: 0 7rem;
+    margin: 0 200px;
+}
+.case-studies-section article {
+    color: var(--text-1);
 }
 
 .heading-box{
-    margin: auto;
-    width: 50%;
+    margin: 80px auto;
+    width: 570px;
     text-align: center;
-    padding-top: 30px;
-    padding-bottom: 15px;
-    margin-bottom: 20px;
+    /* padding-top: 30px;
+    padding-bottom: 15px; */
+    
 }
 .section__head-article{
-    color: #634c4c;
+    color: var(--text-1);
 }
 .section__heading{
     margin-bottom: 5px;
+    font-family: var(--secondary-font-family);
+    font-weight: 800;
+    font-size: 34px;
 }
 .record-card{
     display: flex;
+    /* justify-self: center;
+    align-self: center; */
     margin-top: 20px;
     height: 300px;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
+    width: 900px;
 }
 .record-card>*{
     flex: 1 1 50%;
 }
 .record-card__case{
     padding-top: 30px;
-    color: #5f5050;
 }
 .record-card__heading{
     margin-bottom: 10px;
-    margin-top: 30px;
-    color: #000000;
+    margin-top: 20px;
+    color: #080808;
+    font-family: var(--secondary-font-family);
+    font-size: 24px;
 }
 /* case tag (used for fintech) properties below is used as a generic for the three tags, fintech tag is stated */
 .case-tag{
-    background-color: rgba(255, 230, 0, 0.479);
+    background-color: #FFF6E9;
     font-weight: bold;
     font-family: var(--primary-font-family);
-    font-size: 1.2em;
-    color: orange;
-    letter-spacing: 1.2px;
-    padding: 4px 15px;
-    border-radius: 50px;
+    font-size: 12px;
+    color: #FFA217;
+    /* letter-spacing: 1.1px; */
+    /* line-height: 24px; */
+    padding: 0px 10px;
+    border-radius: 60px;
+    width: 72px;
+    height: 24px;
 }
 #edtech-tag{
-    background-color: rgba(137, 43, 226, 0.158);
-    color: blue;
+    background-color: #D0E6FF;
+    color: #000AFF;
+    width: 64px;
 }
 #phazma-tag{
-    background-color: rgba(58, 128, 0, 0.288);
-    color: #3f8e00;
+    background-color: #E0FFF8;
+    color: #2AB090;
+    width: 64px;
 }
 .record-card__article{
-    line-height: 1.5em;
+    line-height: 1.3em;
+    width: 420px;
+}
+.record-card__picture{
+    padding-left: 5px;
 }
 .record-card__picture img{
-    border-radius: 20px;
-    width: 100%;
+    border-radius: 6px;
+    width: 445px;
     height: 300px;
-    object-fit: cover;
+    object-fit: fill;
 }
 .record-card__button{
     background-color: rgb(255, 166, 0);
@@ -198,39 +220,51 @@
     border: none;
     color: var(--white);
     font-weight: 700;
-    word-spacing: 4px;
-    padding: 10px 25px;
+    /* word-spacing: 4px; */
+    padding: 10px 20px;
     border-radius: 5px;
-    margin-top: 2rem;
+    margin-top: 40px;
+    width: 185px;
+    height: 35px;
+}
+.record-card__button > a {
+    /* font-size: 2px; */
+    color: var(--white);
 }
 #edtech-button{
     background-color: blue;
 }
 #phazma-button{
-    background-color: green;
+    background-color: #2AB090;
 }
 #second-case{
     padding-left: 15px;
 }
-
 .testimonial-section{
     background-color: var(--black);
     color: var(--white);
+    /* padding: 80px; */
 }
 .testimonies-container{
-    margin: 0 6rem;
     display: flex;
     flex-wrap: wrap;
+    width: 100vw;
+    margin: 60px 180px;
 }
-.testimonies-container>*{
-    flex: 1 1 400px;
+.testimony-heading{
+    padding-top: 80px;
 }
+
+/* .testimonies-container>*{
+    flex: 1 1 50%;
+} */
 .client-testimony{
     border: 1px solid transparent;
     color: #b8b1ae;
-    font-family: 'Courier New', Courier, monospace;
-    border-radius: 5px;
-    margin-bottom: 40px;
+    width: 445px;
+    height: 212px;
+    border-radius: 6px;
+    margin-bottom: 62px;
     margin-left: 10px;
     padding: 20px;
     padding-bottom: 0px;
@@ -238,55 +272,69 @@
                 linear-gradient(to right, #9c9c9c, 30%, black)border-box;
 }
 
-blockquote{
-    margin-left: 10px;
-}
+/* blockquote{
+    margin-left: -10px;
+} */
 blockquote p{
     position: relative;
-    color: rgba(204, 196, 196, 0.89);
-    
+    color: var(--text-1);
+    font-size: 14px;
+    line-height: 24px;
+    width: 409px;
+    height: 72px;
+    letter-spacing: 0.01em;
 }
 .blockquote p:before{
     /* content: "\201c""\201d""\2018""\2019"; */
     content: '\275d';
     color: whitesmoke;
-    font-size: 60px;
+    font-size: 100px;
     display: block;
     position: absolute;
-            top: -50px;
+            top: -15px;
             left: -20px;
 
 }
 .client-detail img{
-    width: 80px;
-    height: 75px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     object-fit: cover;
 }
 .client-detail{
     display: flex;
-    margin: 40px 0 20px 0;;
+    margin: 20px 0;
 }
 .client-name{
-    padding: 30px;
+    padding: 15px;
     color: var(--white);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: 900;
+    font-family: var(--secondary-font-family);
+    font-weight: 700;
 }
 
 .designs__details--button{
-    padding: 1rem 3rem;
-    margin-bottom: 30px;
+    padding: 10px 24px;
+    /* margin-bottom: 30px; */
+}
+.designs__details--button a {
+    color: var(--white);
 }
 .designs__details{
     width: 450px;
 }
 .designs__details p {
-    font-size: 0.9em;
-    color: #5e3838;
+    font-size: 14px;
+    color: var(--text-1);
     margin: 20px 0;
     word-spacing: 1px;
     line-height: 20px;
+    width: 420px;
+    text-overflow: ellipsis;
+}
+.designs__details h3 {
+    font-family: var(--secondary-font-family);
+    font-weight: 800;
+    size: 24px;
 }
 .sidebar-arrow{
     display: flex;
@@ -298,24 +346,25 @@ blockquote p{
 
 .designs__image img{
     border-radius: 20px;
-    margin-bottom: 40px;
-    width: 450px;
-    height: 300px;
+    margin: 45px 0 40px 0;
+    width: 414px;
+    height: 282px;
 }
 .designs__container{
     display: flex;
     justify-content: center;
     justify-content: space-evenly;
+    padding-bottom: 80px;
 }
 .get-in-touch-section{
     background-color: var(--black);
     color: var(--white);
+    padding-top: 1px;
 }
 .contact-form-container{
     display: flex;
     justify-content: center;
-    margin-bottom: 50px
-    /* background-color: red; */
+    margin-bottom: 50px;
 }
 
 .contact-form label{
@@ -325,20 +374,23 @@ blockquote p{
     /* display: block; */
     outline: none;
     border: none;
-    border-radius: 5px;
-    padding: 15px;
-    width: 300px;
-    height: 15px;
-    margin: 10px 0 15px 0;
+    border-radius: 4px;
+    padding: 0 12px;
+    width: 350px;
+    height: 40px;
+    /* margin: 10px 0 15px 0; */
 }
-#message-input{
-    height: 100px;
+.contact-form__message textarea{
+    height: 120px;
+    width: 350px;
 }
-.contact-form-button{
-    width: 300px;
+#contact-form-button{
+    width: 350px;
     height: 50px;
-    padding: 5px 50px;
-    font-size: 1em;
+    padding: 16px 24px;
+    font-size: 14px;
+    line-height: 18.2px;
+    font-weight: 700;
     
 }
 .end-text{
@@ -351,4 +403,7 @@ blockquote p{
     color: red;
     font-size: 140%;
     padding: 0 3px;
+}
+button:hover{
+    cursor: pointer;
 }

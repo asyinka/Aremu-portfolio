@@ -17,7 +17,7 @@ async function handleSubmission(event) {
         return;
     }
 
-    // Method 2: through the form element
+    // Method 2: through the form element, we then make use of their name attributes
     // let form = document.querySelector("#contact_form");
     // let email = form.email.value;
     // let mobilenumber = form.mobilenumber.value;
@@ -30,15 +30,19 @@ async function handleSubmission(event) {
         message
     };
     const reqBody = JSON.stringify(dataObject);
+    console.log(reqBody);
+
+    
     const response = await fetch("https://formspree.io/f/xrgjlglr", {method: 'post', body: reqBody});
     // A request is ok if the status code is within the range of 200-299
     console.log("Status Code", response.status);
+
     if (!response.ok) {
         console.log("an error occured", response.statusText)
         return;
     }
     const actualResponse = await response.json();
-    console.log(actualResponse)
+    console.log(actualResponse);
 }
 
 async function fetchState() {
